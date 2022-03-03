@@ -1,5 +1,6 @@
-node_modules/
-build/
-logs/
-
-src/app/.notes
+dist/controller.js
+dist/controller.js.map
+dist/index.js
+dist/index.js.map
+dist/router.js
+dist/router.js.map
