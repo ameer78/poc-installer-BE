@@ -33,12 +33,25 @@ const timeout = (ms:number) => {
 
 const writeToFile = async(payload: UserInfo) => {
     let percent = 0;
-    for(let i =0 ; i < 11; i++){
+    const msgs = [
+        'Env was created successfully',
+        'moving files from src to dis folder',
+        'Creating Profile in the app data',
+        'Profile was created',
+        'Installing Drivers',
+        'Drivers successfully installed',
+        'Create History and logs',
+        'Logs Created',
+        'Creating shortcuts',
+        'Congrats! Installation finished successfully'
+    ]
+    for(let i =0 ; i < 10; i++){
         await timeout(2000);
         percent += 10;
         console.log(percent + "%")
         pusher.trigger('install', 'progress', {
             percent,
+            message: msgs[i]
         });
     }
 
