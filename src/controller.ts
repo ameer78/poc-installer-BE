@@ -34,8 +34,8 @@ const timeout = (ms:number) => {
 const writeToFile = async(payload: UserInfo) => {
     let percent = 0;
     const msgs = [
-        'Env was created successfully',
-        'moving files from src to dis folder',
+        'Environment was created successfully',
+        'Moving files from src to destination folder',
         'Creating Profile in the app data',
         'Profile was created',
         'Installing Drivers',
